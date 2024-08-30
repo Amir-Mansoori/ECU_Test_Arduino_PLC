@@ -1,0 +1,280 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCM4_Simulation_TestBench Vector__XXXz VCM4_Simulation_TestBenchv
+VAL_TABLE_ pedal_type 1 "6 pin pedal" 0 "5 pin pedal" ;
+VAL_TABLE_ Accelerator_Pedal 1 "Real" 0 "Virtual" ;
+VAL_TABLE_ BLevel_Type 1 "To Vbat" 0 "To GND" ;
+VAL_TABLE_ BLevel_Value 1 "To GND/To Vbat" 0 "Float" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ switch4 : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ switch3 : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ switch2 : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ switch1 : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Analog_Out3 : 0|7@1+ (1,0) [0|110] "%" Vector__XXX
+ SG_ Accelerator_Pedal_out2 : 0|11@1+ (1,0) [0|1100] "%" Vector__XXX
+ SG_ Accelerator_Pedal_out1 : 0|11@1+ (1,0) [0|1100] "%" Vector__XXX
+ SG_ Analog_In3 : 0|7@1+ (1,0) [0|110] "%" Vector__XXX
+ SG_ Analog_In2 : 0|7@1+ (1,0) [0|110] "%" Vector__XXX
+ SG_ Analog_In1 : 0|7@1+ (1,0) [0|110] "%" Vector__XXX
+ SG_ Not_Used : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Not_Used : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Not_Used : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 17 BANCO_VCM4_Commands: 1 Vector__XXX
+ SG_ Pedal_Type : 0|1@1+ (1,0) [0|0] ""  VCM4_Simulation_TestBench
+ SG_ Power_Supply : 1|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Ignition_Key : 2|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Accelerator_Pedal : 3|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+
+BO_ 18 BANCO_VCM4_Analog_Crit_ADC_597_3: 8 Vector__XXX
+ SG_ p1_Accelerator_Pedal_Out_1 : 0|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ p2_Accelerator_Pedal_Out_2 : 16|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ p4_Oil_Level_Sensor_Signal : 32|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ p5_Cabin_SW_E_Stop_Signal : 48|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+
+BO_ 19 BANCO_VCM4_Alive: 2 VCM4_Simulation_TestBench
+ SG_ VCM_Alive : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 20 BANCO_VCM4_DI_1504_1: 5 Vector__XXX
+ SG_ p1_Cabin_Tilt_Status_HS_LS : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p2_Cabin_Tilt_Status_Float : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p3_Drive_Req_Signal_1_HS_LS : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p4_Drive_Req_Signal_1_Float : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p5_Drive_Req_Signal_2_HS_LS : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p6_Drive_Req_Signal_2_Float : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p7_Neutral_Req_Signal_HS_LS : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p8_Neutral_Req_Signal_Float : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p9_Reverse_Req_Signal_1_HS_LS : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p10_Reverse_Req_Signal_1_Float : 9|1@1+ (1,0) [0|1] ""  Vector__XXXz
+ SG_ p11_Rpeverse_Req_Signal_2_HS_LS : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p12_Reverse_Req_Signal_2_Float : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p13_Power_Control : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ p14_Ignition_Control : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 21 BANCO_VCM4_PWM_IN1_Arduino_1: 8 Vector__XXX
+ SG_ PWM0_Speed_Pulse_Freq_pin6 : 0|16@1+ (1,0) [0|10000] "%"  VCM4_Simulation_TestBenchv
+ SG_ PWM0_Speed_Pulse_DC_pin6 : 16|8@1+ (1,0) [0|100] "%"  VCM4_Simulation_TestBenchv
+ SG_ PWM1_Distance_Signal_Freq_pin11 : 24|16@1+ (1,0) [0|10000] "%"  VCM4_Simulation_TestBench
+ SG_ PWM1_Distance_Signal_DC_pin11 : 40|8@1+ (1,0) [0|100] "%"  VCM4_Simulation_TestBench
+
+BO_ 22 BANCO_VCM4_Analog_Control_1504_2: 5 Vector__XXX
+ SG_ Start_Stop_Signal_2_Float : 0|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Start_Stop_Signal_2_Analog : 1|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Start_Stop_Signal_1_Float : 2|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Start_Stop_Signal_1_Analog : 3|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ APU_Sensor_Front_Signal_Float : 4|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ APU_Sensor_Front_Signal_Analog : 5|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ APU_Sensor_Rear_Signal_Float : 6|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ APU_Sensor_Rear_Signal_Analog : 7|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ TGC_Off_Request_Float : 8|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ TGC_Off_Request_Analog : 9|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ TGC_On_Request_Float : 10|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ TGC_On_Request_Analog : 11|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Not_Used_FLEX_IN6_Float : 12|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Not_Used_FLEX_IN6_Analog : 13|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Not_Used_FLEX_IN7_Float : 14|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Not_Used_FLEX_IN7_Analog : 15|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Not_Used_FLEX_IN8_Float : 16|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Not_Used_FLEX_IN8_Analog : 17|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Positive_Auxiliary_Contactor_Fee : 18|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Positive_Auxiliary_Contacto_0000 : 19|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Negative_Auxiliary_Contactor_Fee : 20|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Negative_Auxiliary_Contacto_0000 : 21|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Not_Used_FLEX_IN11_Float : 22|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Not_Used_FLEX_IN11_Analog : 23|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ HW_E_Stop_Signal_Float : 24|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ HW_E_Stop_Signal_Analog : 25|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ TPMS_Power_Float : 26|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ TPMS_Power_Analog : 27|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Differential_Lock_Sensor_Signal_ : 28|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Differential_Lock_Sensor_Si_0000 : 29|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Charge_Door_Position_Float : 30|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+ SG_ Charge_Door_Position_Analog : 31|1@1+ (1,0) [0|1] ""  VCM4_Simulation_TestBench
+
+BO_ 23 BANCO_VCM4_DOUT: 3 VCM4_Simulation_TestBench
+ 
+ SG_ VCM_Wake_1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Red_Charging_Light : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCM_Wake_2 : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCM_Wake_3 : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Governor_Valve : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Regeneration_Valve : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCM_Wake_4 : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Auxiliary_HVIL_Out : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HV_Battery_1_9_Wake : 8|1@1+ (1,0) [0|1] "" Vector__XXX 
+ SG_ Contactor_Supply_Control_Packs_4 : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Contactor_Supply_Control_Packs_7 : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Start_Stop_Orange_LED : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Start_Stop_Green_LED : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Green_Charging_Light : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Contactor_Supply_Control_Packs_1 : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Blue_Charging_Light : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TGC_Off_Command : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TGC_On_Command : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LV_ePTO_Relay_Coil_control : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Differential_Lock_Solenoid_LS : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ 
+
+BO_ 24 BANCO_VCM4_PWM_HBO_0: 8 VCM4_Simulation_TestBench
+ SG_ PWM_Fq_HBO_0_A : 0|16@1+ (1,0) [0|10000] "" Vector__XXX
+ SG_ PWM_DC_HBO_0_A : 16|16@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ PWM_Fq_HBO_0_B : 32|16@1+ (1,0) [0|10000] "" Vector__XXX
+ SG_ PWM_DC_HBO_0_B : 48|16@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 25 BANCO_VCM4_PWM_HBO_1: 8 VCM4_Simulation_TestBench
+ SG_ PWM_Fq_HBO_1_A : 0|16@1+ (1,0) [0|10000] "" Vector__XXX
+ SG_ PWM_DC_HBO_1_A : 16|16@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ PWM_Fq_HBO_1_B : 32|16@1+ (1,0) [0|10000] "" Vector__XXX
+ SG_ PWM_DC_HBO_1_B : 48|16@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 26 BANCO_VCM4_PWM_HBO_2: 8 VCM4_Simulation_TestBench
+ SG_ PWM_Fq_HBO_2_A_pos_aux_con_P : 0|16@1+ (1,0) [0|10000] "" Vector__XXX
+ SG_ PWM_DC_HBO_2_A_pos_aux_con_P : 16|16@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ PWM_Fq_HBO_2_B_pos_aux_con_N : 32|16@1+ (1,0) [0|10000] "" Vector__XXX
+ SG_ PWM_DC_HBO_2_B_pos_aux_con_N : 48|16@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 27 BANCO_VCM4_PWM_HBO_3: 8 VCM4_Simulation_TestBench
+ SG_ PWM_Fq_HBO_3_A_neg_aux_con_P : 0|16@1+ (1,0) [0|10000] "" Vector__XXX
+ SG_ PWM_DC_HBO_3_A_neg_aux_con_P : 16|16@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ PWM_Fq_HBO_3_B_neg_aux_con_N : 32|16@1+ (1,0) [0|10000] "" Vector__XXX
+ SG_ PWM_DC_HBO_3_B_neg_aux_con_N : 48|16@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 28 BANCO_VCM4_597_1_Analog_IN_0_3: 8 Vector__XXX
+ SG_ FLEX_IN0_Start_Stop_Signal_2 : 0|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN1_Start_Stop_Signal_1 : 16|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN2_APU_Sensor_Front_Signal : 32|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN3_APU_Sensor_Rear_Signal : 48|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+
+BO_ 29 BANCO_VCM4_597_1_Analog_IN_3_7: 8 Vector__XXX
+ SG_ FLEX_IN4_TGC_Off_Request : 0|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN5_TGC_On_Request : 16|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN6_Not_Used : 32|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN7_Not_Used : 48|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+
+BO_ 30 BANCO_VCM4_597_2_Analog_IN_8_11: 8 Vector__XXX
+ SG_ FLEX_IN8_Not_Used : 0|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN9_Positive_Auxiliary_Cont : 16|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN10_Negative_Auxiliary_Con : 32|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN11_Not_Used : 48|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+
+BO_ 31 BANCO_VCM4_597_2_Analog_IN_12_15: 8 Vector__XXX
+ SG_ FLEX_IN12_HW_E_Stop_Signal : 0|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN13_TPMS_Power : 16|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN14_Differential_Lock_Sens : 32|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_IN15_Charge_Door_Position : 48|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+
+BO_ 32 BANCO_VCM4_PWM_IN2_Arduino_2: 8 Vector__XXX
+ SG_ PWM3_PYRO_Crash_Event_Freq_pin6 : 0|16@1+ (1,0) [0|10000] ""  VCM4_Simulation_TestBench
+ SG_ PWM3_PYRO_Crash_Event_DC_pin6 : 16|8@1+ (1,0) [0|100] ""  VCM4_Simulation_TestBench
+ SG_ FLEX_PWM2_FREQ_pin5 : 24|16@1+ (1,0) [0|10000] "%"  VCM4_Simulation_TestBenchv
+ SG_ FLEX_PWM2_DC_pin5 : 40|8@1+ (1,0) [0|100] "%"  VCM4_Simulation_TestBenchv
+
+BO_ 33 BANCO_VCM4_Analog_Critical_ADC_N: 4 Vector__XXX
+ SG_ ANC2_597_3_3 : 0|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+ SG_ ANC5_597_3_6 : 16|16@1+ (0.01,0) [0|10] "%"  VCM4_Simulation_TestBench
+
+BO_ 34 Arduino1_HW: 2 VCM4_Simulation_TestBench
+ SG_ Arduino1_Alive : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 35 BANCO_VCM4_PWM_NO_USE_Arduino_2: 8 Vector__XXX
+ SG_ FLEX_PWM4_FREQ_pin11 : 0|16@1+ (1,0) [0|10000] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_PWM4_DC_pin11 : 16|8@1+ (1,0) [0|100] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_PWM5_FREQ_pin46 : 24|16@1+ (1,0) [0|10000] "%"  VCM4_Simulation_TestBench
+ SG_ FLEX_PWM5_DC_pin46 : 40|8@1+ (1,0) [0|100] "%"  VCM4_Simulation_TestBench
+
+BO_ 36 Arduino2_HW: 2 VCM4_Simulation_TestBench
+ SG_ Arduino2_Alive : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+
+
+CM_ "Project VCM4";
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NoMsgSendType";
+BA_DEF_ BO_  "Period [ms]" INT 0 65535;
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_  "Version" HEX 0 15;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgTimeoutTime" INT 0 10000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_ BO_  "SystemMessageLongSymbol" STRING ;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "Period [ms]" 0;
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "Version" 1;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "GenMsgTimeoutTime" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+BA_DEF_DEF_  "SystemMessageLongSymbol" "";
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 17 50;
+BA_ "GenMsgCycleTime" BO_ 18 50;
+BA_ "GenMsgCycleTime" BO_ 19 100;
+BA_ "GenMsgTimeoutTime" BO_ 20 3000;
+BA_ "GenMsgCycleTime" BO_ 20 50;
+BA_ "Period [ms]" BO_ 20 50;
+BA_ "GenMsgTimeoutTime" BO_ 21 3000;
+BA_ "GenMsgCycleTime" BO_ 21 50;
+BA_ "Period [ms]" BO_ 21 50;
+BA_ "Period [ms]" BO_ 22 50;
+BA_ "GenMsgCycleTime" BO_ 22 50;
+BA_ "SystemMessageLongSymbol" BO_ 22 "BANCO_VCM4_Analog_Control_1504_2_3";
+BA_ "GenMsgCycleTime" BO_ 23 100;
+BA_ "Period [ms]" BO_ 23 100;
+BA_ "SystemMessageLongSymbol" BO_ 33 "BANCO_VCM4_Analog_Critical_ADC_NOT_USED";
+BA_ "SystemSignalLongSymbol" SG_ 22 Positive_Auxiliary_Contactor_Fee "Positive_Auxiliary_Contactor_Feedback_Float";
+BA_ "SystemSignalLongSymbol" SG_ 22 Positive_Auxiliary_Contacto_0000 "Positive_Auxiliary_Contactor_Feedback_Analog";
+BA_ "SystemSignalLongSymbol" SG_ 22 Negative_Auxiliary_Contactor_Fee "Negative_Auxiliary_Contactor_Feedback_Float";
+BA_ "SystemSignalLongSymbol" SG_ 22 Negative_Auxiliary_Contacto_0000 "Negative_Auxiliary_Contactor_Feedback_Analog";
+BA_ "SystemSignalLongSymbol" SG_ 22 Differential_Lock_Sensor_Signal_ "Differential_Lock_Sensor_Signal_Float";
+BA_ "SystemSignalLongSymbol" SG_ 22 Differential_Lock_Sensor_Si_0000 "Differential_Lock_Sensor_Signal_Analog";
+BA_ "SystemSignalLongSymbol" SG_ 23 Contactor_Supply_Control_Packs_4 "Contactor_Supply_Control_Packs_4_6";
+BA_ "SystemSignalLongSymbol" SG_ 23 Contactor_Supply_Control_Packs_7 "Contactor_Supply_Control_Packs_7_9";
+BA_ "SystemSignalLongSymbol" SG_ 23 Contactor_Supply_Control_Packs_1 "Contactor_Supply_Control_Packs_1_3";
+BA_ "SystemSignalLongSymbol" SG_ 30 FLEX_IN9_Positive_Auxiliary_Cont "FLEX_IN9_Positive_Auxiliary_Contactor_Feedback";
+BA_ "SystemSignalLongSymbol" SG_ 30 FLEX_IN10_Negative_Auxiliary_Con "FLEX_IN10_Negative_Auxiliary_Contactor_Feedback";
+BA_ "SystemSignalLongSymbol" SG_ 31 FLEX_IN14_Differential_Lock_Sens "FLEX_IN14_Differential_Lock_Sensor_Signal";
+VAL_ 3221225472 Not_Used 1 "To Vbat" 0 "To GND" ;
+VAL_ 17 Pedal_Type 1 "6 pin pedal" 0 "5 pin pedal" ;
+VAL_ 17 Accelerator_Pedal 1 "Real" 0 "Virtual" ;
+
